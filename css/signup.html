@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+  </head>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card {
+      background-color: #d5d4d4;
+      border-radius: 8px;
+      width: 380px;
+      padding: 30px;
+    }
+    h2 {
+      text-align: center;
+      color: #1a50a0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    input {
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #000000;
+      background-color: #d8d8d8;
+    }
+    button {
+      border-radius: 8px;
+      padding: 10px;
+      background-color: #1b81da;
+      color: #fff;
+      border: 1px solid rgb(3, 27, 99);
+    }
+    button:hover {
+      background-color: #0741ac;
+    }
+    .name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      gap: 10px;
+      width: 300px;
+      margin-left: 10px;
+      margin-right: 25px;
+    }
+    .name input{
+        width: 150px;
+    }
+  </style>
+  <body>
+    <div class="card">
+      <h2>Sign Up</h2>
+      <form>
+        <input type="email" name="" id="" placeholder="Email" />
+        <div class="name">
+          <input type="text" name="" id="" placeholder="First Name" />
+          <input type="text" name="" id="" placeholder="Last Name" />
+        </div>
+        <input type="password" name="" id="" placeholder="Password" />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
