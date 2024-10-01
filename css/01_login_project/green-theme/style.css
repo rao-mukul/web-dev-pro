@@ -13,6 +13,8 @@ body {
   border-radius: 8px;
   width: 300px;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
 h2 {
   text-align: center;
