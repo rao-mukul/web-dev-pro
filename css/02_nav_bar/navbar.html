@@ -12,7 +12,7 @@
         padding: 20px;
       }
       .nav-container {
-        /* border: 2px solid; */
+        margin-bottom: 40px;
       }
       h2 {
         margin-bottom: 10px;
@@ -39,6 +39,22 @@
         color: #202020;
         /* background-color: #d45b04; */
         padding: 5px 15px;
+        position: relative;
+      }
+      .nav1 a::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: #0a65c7;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .nav1 a:hover::after {
+        transform: scaleX(1);
       }
 
       .nav1 .login-btn {
