@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+
+}
+
+.card{
+    background-color: #f5f5f7;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+img{
+    width: 200px;
+}
+
+.blue-btn{
+    background-color: #0076df;
+    
+}
