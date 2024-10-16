@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: grid;
+  /* width: 100vw; */
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: 2fr 3fr 1fr; */
+  /* grid-template-columns: ; */
+}
+
+.carousel img{
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.carousel{
+    margin: 10px;
+}
+
+.card{
+    /* max-height: 350px; */
+}
