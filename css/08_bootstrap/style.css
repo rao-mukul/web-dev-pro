@@ -5,32 +5,42 @@ body {
   color: #fff;
   height: 100vh;
   width: 100vw;
+  box-sizing: border-box;
 }
 
 .container {
   display: grid;
-  /* width: 100vw; */
-  /* grid-template-columns: 1fr; */
-  /* grid-template-rows: 2fr 3fr 1fr; */
-  /* grid-template-columns: ; */
+  grid-template-columns: 1fr;
+  grid-template-rows: 230px 370px 10px;
+  width: 100%;
 }
 
-.carousel img{
-    height: 250px;
-    object-fit: cover;
+.carousel img {
+  height: 200px;
+  object-fit: cover;
 }
 
-.card-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 10px;
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px;
 }
 
-.carousel{
-    margin: 10px;
+.carousel {
+  margin: 10px;
 }
 
-.card{
-    /* max-height: 350px; */
+footer {
+  text-align: center;
 }
+
+.card {
+  background-color: #e7dede;
+  max-height: 300px;
+}
+
+.card a{
+    width: 100%;
+}
+
