@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions in CSS</title>
+    <style>
+      .static-box {
+        background-color: pink;
+        position: static;
+      }
+      .relative-box {
+        background-color: greenyellow;
+        position: relative;
+        left: 50px;
+        top: 50px;
+      }
+      .absolute-box {
+        background-color: rgb(37, 71, 222);
+        position: absolute;
+        top: 30px;
+        left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-container" style="position: relative">
+      <div class="static-box">Static Box</div>
+
+      <div class="relative-box">Relative Box</div>
+
+      <div class="absolute-box">Absolute Box</div>
+    </div>
+  </body>
+</html>
