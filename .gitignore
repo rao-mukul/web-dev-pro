@@ -1,1 +1,3 @@
 code+files
+tailwind/node_modules
+tailwind/src/output.css
