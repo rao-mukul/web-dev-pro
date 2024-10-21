@@ -6,20 +6,37 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body>
-    <div id="card">
-      <h1>Login</h1>
+  <body
+    class="bg-gradient-to-r from-slate-900 to-slate-700 text-gray-200 flex justify-center items-center min-h-screen font-mono"
+  >
+    <div id="card" class="border-2 border-gray-300 p-14 rounded-lg">
+      <h1 class="text-center mb-6 font-semibold text-2xl">Login</h1>
       <form>
-        <div>
-          <label for="">Email</label>
-          <input type="email" name="email" id="" />
+        <div class="mb-4">
+          <label class="block">Email</label>
+          <input
+            type="email"
+            name="email"
+            class="bg-slate-300 rounded-md px-3 py-2"
+            placeholder="Email"
+          />
         </div>
-        <div>
-          <label for="">Password</label>
-          <input type="password" name="password" id="" />
+        <div class="mb-6">
+          <label class="block">Password</label>
+          <input
+            type="password"
+            name="password"
+            class="bg-slate-300 rounded-md px-3 py-2"
+            placeholder="********"
+          />
         </div>
 
-        <button type="submit">Login</button>
+        <button
+          type="submit"
+          class="border-2 rounded-md py-2 px-3 block w-full bg-gray-500 hover:bg-gray-600"
+        >
+          Login
+        </button>
       </form>
     </div>
   </body>
