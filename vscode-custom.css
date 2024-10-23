@@ -24,3 +24,34 @@
   font-size: 1.1rem;
   content: "🚀";
 }
+
+/* Command palette text input */
+.quick-input-filter .monaco-inputbox {
+  border-radius: 12px !important;
+  padding: 8px !important;
+  border: none !important;
+  background-color: rgba(34, 34, 34, 0.4) !important;
+  font-family: "Dank Mono" !important;
+  font-size: 14px !important;
+  margin-bottom: 16px !important;
+}
+
+/* Remove background for lists */
+.monaco-list-rows {
+  background: transparent !important;
+}
+
+#command-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(8px);
+}
+
+/* Command palette's input box placeholder. */
+.monaco-inputbox input::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
