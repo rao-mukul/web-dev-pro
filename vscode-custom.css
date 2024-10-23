@@ -13,9 +13,10 @@
 }
 .composite.title h2 {
   font-weight: bold !important;
-  font-size: 12px !important;
+  font-size: 14px !important;
   text-transform: uppercase;
   color: #bc9abc !important;
+  font-family: "Dank Mono";
 }
 
 .composite.title h2::before {
@@ -54,4 +55,22 @@
 /* Command palette's input box placeholder. */
 .monaco-inputbox input::placeholder {
   color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* My Personal Customisation */
+.label-name {
+  font-family: "Dank Mono";
+}
+
+.search-label {
+  font-family: "Dank Mono";
+  font-size: larger;
+}
+
+.title {
+  font-family: "Dank Mono";
+}
+
+.monaco-pane-view .pane > .pane-header h3.title {
+  font-size: 13px;
 }
