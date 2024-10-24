@@ -20,13 +20,13 @@ Symbol
 // var score = 101;
 
 let score = 101;
-let name = "Mukul"
-let isLoggedin = true
+let name = "Mukul";
+let isLoggedin = true;
 
 //Object
-let teaTypes = ["lemon","orange"]
-let user = {firstname:"Mukul", lastname: "Yadav"}
+let teaTypes = ["lemon", "orange"];
+let user = { firstname: "Mukul", lastname: "Yadav" };
 
-let getScore = score
+let getScore = score;
 
 console.log(getScore);
