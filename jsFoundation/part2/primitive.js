@@ -55,3 +55,11 @@ let sym4 = Symbol("Mukul"); // It creates a new Symbol every time
 console.log(sym4);
 console.log(sym3 === sym4); // symbol Guarantees the Uniqueness
 // Symbol() constructor returns a Symbol that's Guaranteed to be unique
+
+// console.log(Symbol(1));
+// console.log(Symbol("Mukul"));
+// console.log(Symbol(true));
+// console.log(Symbol(null));
+// console.log(Symbol(undefined)); // same as Symbol()
+// console.log(Symbol(NaN));
+// console.log(Symbol(Infinity));
