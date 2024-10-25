@@ -5,8 +5,8 @@ console.log("Hello");
 
 String
 Number
-Boolean
-Bigint
+Boolean 
+Bigint : Numbers >= 2 ** 53, add n at the end : 9007199254740992n
 
 Undefined 
 null
