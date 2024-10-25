@@ -1,4 +1,4 @@
-// Number : numbers < 2 ** 53
+// -------Number-------
 let balance = 101;
 let balance2 = -27.5;
 let anotherBalance = new Number(101); // Not Recommended
@@ -12,11 +12,11 @@ let anotherBalance = new Number(101); // Not Recommended
 // console.log(typeof balance2);
 // console.log(typeof anotherBalance);
 
-// Boolean
+// -------Boolean-------
 let isActive = true;
 let isReallyActive = new Boolean(false); // Not Recommended
 
-// null and undefined
+// -------null and undefined-------
 let firstName; // undefined --> the value is not defined yet
 let fname = undefined;
 let lastName = null; // null --> empty
@@ -30,7 +30,7 @@ let lastName = null; // null --> empty
 // console.log(typeof fname);
 // console.log(typeof lastName); // Historical Bug in JS, Returns type of null as object
 
-// string
+// -------string-------
 let myString = "Hello";
 let userName = 'Mukul';
 // console.log(typeof myString + typeof userName);
@@ -43,7 +43,7 @@ let demoStr = `Value is ${2 * 2}`;
 // console.log(greetMessage);
 // console.log(demoStr);
 
-// symbol --> The whole point of symbol is Generate a Unique Value
+// -------symbol -------> The whole point of symbol is Generate a Unique Value
 let sym1 = Symbol();
 let sym2 = Symbol();
 // console.log(typeof sym1);
