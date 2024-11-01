@@ -89,3 +89,31 @@ let hardCopyCities = [...topCities];
 topCities.pop();
 // console.log(hardCopyCities);
 
+/* 
+8. You have two arrays: `europeanCities` containing `"Paris"` and `"Rome"`, and `asianCities` containing `"Tokyo"` and `"Bangkok"`. 
+   Merge these two arrays into a new array named `worldCities`.
+*/
+
+let europeanCities = ["Paris", "Rome"];
+let asianCities = ["Tokyo", "Bangkok"];
+let worldCities = europeanCities.concat(asianCities);
+
+console.log(worldCities);
+
+/* 
+9. You have an array named `teaMenu` containing `"masala chai"`, `"oolong tea"`, `"green tea"`, and `"earl grey"`. 
+   Find the length of the array and store it in a variable named `menuLength`.
+*/
+
+let teaMenu = ["Masala chai", "oolong tea", "green tea", "earl grey"];
+
+let menuLength = teaMenu.length;
+
+/* 
+10. You have an array named `cityBucketList` containing `"Kyoto"`, `"London"`, `"Cape Town"`, and `"Vancouver"`. 
+    Check if `"London"` is in the array and store the result in a variable named `isLondonInList`.
+*/
+
+let cityBucketList = ["Kyoto", "London", "Cape Town", "Vancouver"];
+
+let isLondonInList = cityBucketList.includes("London");
