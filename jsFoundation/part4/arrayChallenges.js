@@ -84,10 +84,14 @@ popularTeas.pop();
    Create a hard copy of this array named `hardCopyCities`.
  */
 let topCities = ["Berlin", "Singapore", "New York"];
-let hardCopyCities = [...topCities];
+let hardCopyCities = [...topCities]; // Spread Operator
+
+// Another Way to create a Hard Copy
 // let hardCopyCities = topCities.slice();
+
 topCities.pop();
 // console.log(hardCopyCities);
+// console.log(topCities);
 
 /* 
 8. You have two arrays: `europeanCities` containing `"Paris"` and `"Rome"`, and `asianCities` containing `"Tokyo"` and `"Bangkok"`. 
@@ -96,9 +100,17 @@ topCities.pop();
 
 let europeanCities = ["Paris", "Rome"];
 let asianCities = ["Tokyo", "Bangkok"];
-let worldCities = europeanCities.concat(asianCities);
 
-console.log(worldCities);
+// let worldCities = europeanCities + asianCities;
+// console.log(worldCities);
+// console.log(typeof worldCities);
+// + operator here converts both the arrays into string and give a string as a result
+
+// let worldCities = [europeanCities,asianCities]
+// console.log(worldCities); // creates a 2D array
+
+let worldCities = europeanCities.concat(asianCities);
+// console.log(worldCities);
 
 /* 
 9. You have an array named `teaMenu` containing `"masala chai"`, `"oolong tea"`, `"green tea"`, and `"earl grey"`. 
@@ -117,3 +129,4 @@ let menuLength = teaMenu.length;
 let cityBucketList = ["Kyoto", "London", "Cape Town", "Vancouver"];
 
 let isLondonInList = cityBucketList.includes("London");
+// console.log(isLondonInList);
