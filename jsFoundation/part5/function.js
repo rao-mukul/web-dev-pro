@@ -41,3 +41,29 @@ const calculateTotal2 = (price, quantity) => price * quantity;
 // Here no {} and return statement is required but the code must be in single line
 const totalCost = calculateTotal2(399, 1000);
 // console.log(totalCost);
+
+// This and Context in JS : Run the Following code in Bowser Console
+function testOne() {
+  console.log(this);
+}
+// testOne(); // prints the Window Object in Browser
+// In the Bowser this is the Context because we are in the Window of Browser
+// It doesn't print Window here in Node.js as there's no browser here
+
+const testTwo = () => {
+  console.log(this);
+};
+testTwo(); // Arrow Function still prints the Window Object in Browser
+// Therefore, Arrow Function do have the this context ✅
+// So, the whole theory that Arrow functions don't have the this context is not true actually
+
+// Array Function do have the Ability to reach out the this context
+// But It doesn't have the ability to Pass on this context anywhere
+
+// Eg: When we go into the DOM (Document Object Model):
+// We can not use Arrow Functions when we try to access any Element on the Web
+// We have to use the Classic Functions
+
+// The Whole Reason Behind them is :
+// That there is not enough ability in this in the Arrow Function
+// It is there but the ability to just pass it on this is not there
