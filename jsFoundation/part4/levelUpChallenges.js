@@ -126,4 +126,41 @@ for (const city in worldCities) {
   largeCities[city] = worldCities[city];
 }
 
-console.log(largeCities);
+// console.log(largeCities);
+
+/* 
+7. Write a `forEach` loop that iterates through the array `["earl grey", "green tea", "chai", "oolong tea"]`. 
+   Stop the loop when `"chai"` is found, and store all previous tea types in an array named `availableTeas`.
+*/
+
+let teaCollection = ["earl grey", "green tea", "chai", "oolong tea"];
+let availableTeas = [];
+
+teaCollection.forEach(function (tea) {
+  if (tea === "chai") {
+    return;
+  }
+  availableTeas.push(tea);
+});
+
+// console.log(availableTeas);
+// to stop the loop completely when "chai" is found, you can use a regular for loop instead of forEach, we can also use the some() method
+
+// Since forEach does not support breaking out of the loop.
+
+/* 
+8. Write a `forEach` loop that iterates through the array `["Berlin", "Tokyo", "Sydney", "Paris"]`. 
+   Skip `"Sydney"` and store the other cities in a new array named `traveledCities`.
+*/
+
+let myWorldCities = ["Berlin", "Tokyo", "Sydney", "Paris"];
+let traveledCities = [];
+
+myWorldCities.forEach((city) => {
+  if (city === "Sydney") {
+    return;
+  }
+  traveledCities.push(city);
+});
+
+// console.log(traveledCities);
