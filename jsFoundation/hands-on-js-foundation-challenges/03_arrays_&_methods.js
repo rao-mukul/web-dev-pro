@@ -24,12 +24,19 @@ function removeDuplicates(arr) {
   return uniqueArray;
 }
 // console.log(removeDuplicates([1,2,1,2,4,5,3,4]));
+
 // Above Question using filter method
 const array = [1, 2, 2, 3, 4, 4, 5];
 const uniqueArray = array.filter(
   (item, index) => array.indexOf(item) === index
 );
 // console.log(uniqueArray); // Output: [1, 2, 3, 4, 5]
+
+// Above Question using Set
+function removeDuplicates2(arr) {
+  return [...new Set(arr)];
+}
+console.log(removeDuplicates2([1, 2, 1, 2, 4, 5, 3, 4]));
 
 function flattenArray(arr) {
   return arr.flat(Infinity);
