@@ -124,7 +124,7 @@ let result = teaMaker("green tea"); // It holds the function so we can call it
 
 // Another Simple Example of Lexical Scoping:
 function init() {
-  var name = "Mozilla"; // name is a local variable created by init
+  const name = "Mozilla"; // name is a local variable created by init
   function displayName() {
     // displayName() is the inner function, that forms a 👉closure
     console.log(name); // use variable declared in the parent function
