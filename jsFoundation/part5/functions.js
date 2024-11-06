@@ -96,3 +96,39 @@ const order = processTeaOrder(makeTea);
 
 // 👉 Anything that takes function as a parameter or returns a function back
 // is an example of Higher order function
+
+/* 
+5. Write a function named `createTeaMaker` that returns another function. The returned function should take one parameter, `teaType`, and return a message like `"Making green tea"`. 
+Store the returned function in a variable named `teaMaker` and call it with `"green tea"`.
+*/
+
+function createTeaMaker(name) {
+  let score = 100; // This score is not passed to the below function
+  // But we still have access to it inside the inner function
+  return function (teaType) {
+    // We never passed on name to this function
+    return `Making ${teaType} ${name} ${score}`; // But we can Still access name inside it
+    // All the inner Functions have the access to whatever outer functions have
+    // This behaviour is called : 👉 Lexical scoping in JS
+  };
+}
+
+const teaMaker = createTeaMaker("Mukul");
+// console.log(teaMaker); // prints: [Function (anonymous)]
+let result = teaMaker("green tea"); // It holds the function so we can call it
+// console.log(result);
+
+// 👉Lexical Scoping: In JavaScript, functions have access to variables declared in their outer scopes. This means that inner functions can "see" and use variables declared in their parent functions, and so on up the scope chain.
+
+// 👉Closures, on the other hand, are a result of this lexical scoping when functions "remember" the scope they were defined in, even after the outer function has finished executing.
+
+// Another Simple Example of Lexical Scoping:
+function init() {
+  var name = "Mozilla"; // name is a local variable created by init
+  function displayName() {
+    // displayName() is the inner function, that forms a 👉closure
+    console.log(name); // use variable declared in the parent function
+  }
+  displayName();
+}
+// init();
