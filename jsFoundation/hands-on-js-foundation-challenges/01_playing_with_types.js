@@ -1,5 +1,8 @@
 function stringToNumber(input) {
   let num = Number(input);
+  if (input.trim() === "") {
+    return `Not a number`;
+  }
   if (isNaN(num)) {
     return `Not a number`;
   } else {
@@ -7,9 +10,7 @@ function stringToNumber(input) {
   }
 }
 
-console.log(stringToNumber("    "));
-
-
+// console.log(stringToNumber(""));
 
 function flipBoolean(input) {
   let bool = Boolean(input);
@@ -18,18 +19,22 @@ function flipBoolean(input) {
 }
 
 function whatAmI(input) {
-  if (typeof input === "number") {
-    return "I'm a number!";
+  let inputType = typeof input;
+  if (inputType === "object") {
+    if (Array.isArray(inputType)) {
+      inputType = "array";
+    } else if (input === null) {
+      inputType = "null";
+    }
   }
-  if (typeof input === "string") {
-    return "I'm a string!";
-  }
+  return `I'm a ${inputType}!`;
 }
 
 function isItTruthy(input) {
-  if (Boolean(input) === true) {
-    return `It's truthy!`;
-  } else {
-    return `It's falsey!`;
-  }
+  //   if (Boolean(input) === true) {
+  //     return `It's truthy!`;
+  //   } else {
+  //     return `It's falsey!`;
+  //   }
+  return input ? `It's truthy!` : `It's falsey!`;
 }
