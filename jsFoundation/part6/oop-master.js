@@ -100,4 +100,25 @@ class CoffeMachine {
 let myMachine = new CoffeMachine();
 // console.log(myMachine.start());
 // console.log(myMachine.brewCoffee());
-console.log(myMachine.pressStartButton());
+// console.log(myMachine.pressStartButton());
+
+// Polymorphism : poly:many + morphism: structure or form
+// The word polymorphism means having many forms
+
+class Bird {
+  fly() {
+    return `Flying....`;
+  }
+}
+
+class Penguin extends Bird {
+  fly() {
+    return `Penguins can't fly`;
+  }
+}
+
+let bird = new Bird();
+let penguin = new Penguin();
+console.log(bird.fly());
+console.log(penguin.fly());
+// Here the Method name is Exactly same but their Behaviour is different
