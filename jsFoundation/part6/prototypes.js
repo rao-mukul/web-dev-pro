@@ -39,3 +39,10 @@ Object.defineProperty(Array.prototype, "devLength", {
 let arr = [1, 2, 3, 4];
 console.log(`Normal length: ${arr.length}`); // Output will be 4
 console.log(`devLength: ${arr.devLength}`); // Output will be 3
+
+// Another simple way to do the same but makes a function instead of property
+Array.prototype.devLen = function () {
+  return this.length - 1;
+};
+let arr2 = [1, 2, 3, 4, 5];
+console.log(arr2.devLen());
