@@ -20,7 +20,7 @@ function Animal(type) {
   this.type = type;
 }
 
-// Prototype Chain
+// ------Prototype Chain------
 Animal.prototype.speak = function () {
   return `${this.type} makes a sound`;
 };
@@ -35,3 +35,28 @@ let myArray = [1, 2, 3, 4];
 // console.log(myArray.mukul());
 let myNewArray = [5, 6, 7, 8];
 // console.log(myNewArray.mukul());
+
+// Class in JS
+class Vehicle {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+  start() {
+    return `${this.model} is a car from ${this.make}`;
+  }
+}
+
+// Inheritance
+class Car extends Vehicle {
+  drive() {
+    return `${this.make} : This is an inheritance example`;
+  }
+}
+
+let myCar = new Car("Kia", "Sonnet");
+// console.log(myCar.start());
+// console.log(myCar.drive());
+
+let vehOne = new Vehicle("Kia", "Carens");
+// console.log(vehOne.make);
