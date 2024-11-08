@@ -2,7 +2,7 @@
 // Prototype means extra properties and functionality in any given data type
 // Is JS truly Object Based?
 // Yeah, It supports everything it has to support, but behind the scene it's actually prototype based
-// It looks like Object Oriented Programming as it supports keyworks like: class, custructor,object; but it's just a Mask over it, behund the scenes it's still Prototype based
+// It looks like Object Oriented Programming as it supports keyworks like: class, custructor,object; but it's just a Mask over it, behind the scenes it's still Prototype based
 
 let computer = { cpu: 8 };
 let lenovo = {
