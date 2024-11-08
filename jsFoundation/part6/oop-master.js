@@ -60,3 +60,21 @@ let myCar = new Car("Kia", "Sonnet");
 
 let vehOne = new Vehicle("Kia", "Carens");
 // console.log(vehOne.make);
+
+// Encapsulation : to restrict the direct access to object data
+class BankAccount {
+  #balance = 0;
+
+  deposit(amount) {
+    this.#balance += amount;
+    return this.#balance;
+  }
+  getBalance() {
+    return `$ ${this.#balance}`;
+  }
+}
+
+let account = new BankAccount();
+console.log(account.getBalance());
+account.deposit(100);
+console.log(account.getBalance());
