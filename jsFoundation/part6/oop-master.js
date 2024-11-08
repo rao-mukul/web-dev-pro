@@ -119,6 +119,20 @@ class Penguin extends Bird {
 
 let bird = new Bird();
 let penguin = new Penguin();
-console.log(bird.fly());
-console.log(penguin.fly());
+// console.log(bird.fly());
+// console.log(penguin.fly());
 // Here the Method name is Exactly same but their Behaviour is different
+
+// ------static method-------
+class Calculator {
+  // static methods are special methods which can only be called by the class itself
+  // nobody else can call it
+  static add(a, b) {
+    return a + b;
+  }
+}
+
+// let miniCalc = new Calculator();
+// console.log(miniCalc.add(2, 3));
+
+console.log(Calculator.add(2, 3));
