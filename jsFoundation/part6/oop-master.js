@@ -75,6 +75,29 @@ class BankAccount {
 }
 
 let account = new BankAccount();
-console.log(account.getBalance());
+// console.log(account.getBalance());
 account.deposit(100);
-console.log(account.getBalance());
+// console.log(account.getBalance());
+
+// Abstraction : hides the complex implementation details
+class CoffeMachine {
+  start() {
+    // call DB
+    // filter value
+    return `Starting the machine...`;
+  }
+  brewCoffee() {
+    // complex calculation
+    return `Brewing coffee`;
+  }
+  pressStartButton() {
+    let msgOne = this.start();
+    let msgTwo = this.brewCoffee();
+    return `${msgOne}\n${msgTwo}`;
+  }
+}
+
+let myMachine = new CoffeMachine();
+// console.log(myMachine.start());
+// console.log(myMachine.brewCoffee());
+console.log(myMachine.pressStartButton());
