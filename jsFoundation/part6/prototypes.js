@@ -1,8 +1,12 @@
 // JS is a Prototype based language
 // Prototype means extra properties and functionality in any given data type
+// Purpose of Prototype:
+// To define properties and methods that can be shared by all instances of an object
+
 // Is JS truly Object Based?
 // Yeah, It supports everything it has to support, but behind the scene it's actually prototype based
 // It looks like Object Oriented Programming as it supports keyworks like: class, custructor,object; but it's just a Mask over it, behind the scenes it's still Prototype based
+// JavaScript classes are just syntactic sugar over JavaScript's existing prototype-based inheritance
 
 let computer = { cpu: 8 };
 let lenovo = {

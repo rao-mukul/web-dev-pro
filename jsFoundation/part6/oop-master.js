@@ -134,11 +134,12 @@ class Calculator {
 
 // let miniCalc = new Calculator();
 // console.log(miniCalc.add(2, 3)); // No Object can call a static method
-
 // console.log(Calculator.add(2, 3)); // Only Class itself can call a static method
 
 // ------Getters and Setters------
-
+//  Gives more Control over getting and setting the value of a Property
+// Getters are used to fetch data, and setters are used to modify data, providing a way to control access to object properties
+// User Case: Validation on setting value; more control over getting vaule
 class Employee {
   #salary; // Define a truly private field
   constructor(name, salary) {
@@ -175,7 +176,7 @@ console.log(emp.salary); // Accesses via getter
 emp.salary = 300000; // Sets via setter
 // console.log(emp.#salary); // Error: Cannot access private field directly
 
-// const emp = new Employee(" ", -202);
+// const emp2 = new Employee("Mukul", -202);
 // if you pass a negative value for salary in the constructor, it will set that value without validation.This can lead to issues, as the constructor bypasses the validation we set up in the setter method.
 
 // Solution: Use the Setter within the Constructor: This way, the salary setter is responsible for validation, even during initialization.
