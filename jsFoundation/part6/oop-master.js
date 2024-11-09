@@ -133,6 +133,50 @@ class Calculator {
 }
 
 // let miniCalc = new Calculator();
-// console.log(miniCalc.add(2, 3));
+// console.log(miniCalc.add(2, 3)); // No Object can call a static method
 
-console.log(Calculator.add(2, 3));
+// console.log(Calculator.add(2, 3)); // Only Class itself can call a static method
+
+// ------Getters and Setters------
+
+class Employee {
+  #salary; // Define a truly private field
+  constructor(name, salary) {
+    this._name = name; // Conventionally private but accessible
+    // this.#salary = salary; // Truly private
+    this.salary = salary; // Use the setter to initialize, applying validation
+  }
+
+  get name() {
+    return this._name;
+  }
+  set name(empName) {
+    if (typeof empName === `string` && empName.trim() !== "") {
+      this._name = empName;
+    } else {
+      console.error("Invalid Name");
+    }
+  }
+
+  get salary() {
+    return `You are not allowed to see Salary`;
+  }
+  set salary(amount) {
+    if (amount >= 0) {
+      this.#salary = amount;
+    } else {
+      console.error(`Salary can't be negative`);
+    }
+  }
+}
+
+const emp = new Employee("Mukul", 100000);
+console.log(emp.salary); // Accesses via getter
+emp.salary = 300000; // Sets via setter
+// console.log(emp.#salary); // Error: Cannot access private field directly
+
+// const emp = new Employee(" ", -202);
+// if you pass a negative value for salary in the constructor, it will set that value without validation.This can lead to issues, as the constructor bypasses the validation we set up in the setter method.
+
+// Solution: Use the Setter within the Constructor: This way, the salary setter is responsible for validation, even during initialization.
+const emp2 = new Employee("Mukul", -202);
