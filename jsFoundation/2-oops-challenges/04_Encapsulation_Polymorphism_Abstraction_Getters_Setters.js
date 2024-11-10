@@ -43,7 +43,7 @@ class Circle extends Shape {
     super();
     this.r = r;
   }
-  area(r) {
+  area() {
     return 3.14 * this.r ** 2;
   }
 }
@@ -53,7 +53,7 @@ class Rectangle extends Shape {
     this.l = l;
     this.b = b;
   }
-  area(l, b) {
+  area() {
     return this.l * this.b;
   }
 }
