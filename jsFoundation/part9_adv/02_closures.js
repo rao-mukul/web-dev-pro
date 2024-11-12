@@ -1,5 +1,5 @@
 // Closure are functions, they remember the environment in which they were created
-// These functions can retain the vriables declared outside them
+// These functions can retain the variables declared outside them
 
 function outer() {
   let counter = 4;

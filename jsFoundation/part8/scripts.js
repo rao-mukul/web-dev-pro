@@ -62,6 +62,8 @@ document
     // Note the use of "value" here instead of "textContent" for the input element
     feedbackDisplay.style.fontSize = "25px";
     feedbackDisplay.classList.add("highlight");
+    // how to get the label element
+    const feedbackLabel = document.querySelector('label[for="feedbackInput"]');
   });
 
 // Example 9
