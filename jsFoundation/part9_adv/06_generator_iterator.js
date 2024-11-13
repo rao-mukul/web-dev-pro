@@ -15,4 +15,5 @@ console.log(gen.next().value);
 console.log(genTwo.next().value);
 console.log(genTwo.next().value);
 
-// Here .next() is the Iterator function* and yield is Generator
+// Here .next() is the Iterator
+// function* and yield is Generator
