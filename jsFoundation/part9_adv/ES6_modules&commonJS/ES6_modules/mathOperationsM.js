@@ -9,3 +9,4 @@ export function subtract(a, b) {
 export default function multiply(a, b) {
   return a * b;
 }
+// Each module file can have only one default export.
