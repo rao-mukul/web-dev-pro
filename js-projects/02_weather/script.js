@@ -36,12 +36,20 @@ document.addEventListener("DOMContentLoaded", () => {
     return data;
   }
 
-  function displayWeatherData(fetchWeatherData) {
-    console.log(fetchWeatherData);
+  function displayWeatherData(data) {
+    console.log(data);
+    const { name, main, weather } = data;
+    cityNameDisplay.textContent = name;
+    temperatureDisplay.textContent = `Temperature : ${main.temp}`;
+    descriptionDisplay.textContent = `Weather : ${weather[0].description}`;
+
+    // unlock the display
+    weatherInfo.classList.remove("hidden");
+    errorMessage.classList.add("hidden");
   }
 
   function showError() {
-    weatherInfo.classList.add("hidden");
-    errorMessage.classList.remove("hidden");
+    weatherInfo.classList.remove("hidden");
+    errorMessage.classList.add("hidden");
   }
 });
