@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const API_KEY = "589dcbceec9d02b60b376891665553f4"; //env variables
 
   getWeatherBtn.addEventListener("click", async () => {
-    const city = cityInput.ariaValueMax.trim();
+    const city = cityInput.value.trim();
     if (!city) return;
 
     // it may throw an error
@@ -25,10 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function fetchWeatherData(city) {
     // gets the data
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`;
+
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error("City not Found");
+    }
+    const data = await response.json();
+    return data;
   }
 
   function displayWeatherData(fetchWeatherData) {
-    // display
+    console.log(fetchWeatherData);
   }
 
   function showError() {
